@@ -1,6 +1,7 @@
 import 'package:calculadora/widgets/calc_button.dart';
 import 'package:calculadora/widgets/line_separator.dart';
 import 'package:calculadora/widgets/main_result.dart';
+import 'package:calculadora/widgets/results_widget.dart';
 import 'package:calculadora/widgets/sub_result.dart';
 import 'package:flutter/material.dart';
 
@@ -20,11 +21,7 @@ class CalculatorScreen extends StatelessWidget {
                 child: Container(),
               ),
 
-              SubResult( text: '1000' ),
-              SubResult( text: 'X' ),
-              SubResult( text: '1000' ),
-              LineSeparator(),
-              MainResultText( text: '2000' ),
+              Result(),
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
