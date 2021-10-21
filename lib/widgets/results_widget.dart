@@ -15,11 +15,11 @@ class Result extends StatelessWidget {
         return Column(
           children: [
     
-            SubResult( text: '1000' ),
-            SubResult( text: 'X' ),
-            SubResult( text: '1000' ),
+            SubResult( text: state.firstNumber ),
+            SubResult( text: state.operation ),
+            SubResult( text: state.secondNumber ),
             LineSeparator(),
-            MainResultText( text: '2000' ),
+            MainResultText( text: state.mathResult ),
             
           ],
         );
